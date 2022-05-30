@@ -1,0 +1,32 @@
+Get https://gorest.co.in/public/v2/users
+
+
+GET https://gorest.co.in/public/v2/users/2616
+
+POST https://gorest.co.in/public/v2/users HTTP/1.1
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer 8154de851cf60ecb95bf9d234741b50123426a751a33c18e61e3a2ea5dfc80ec
+
+{
+    "name":"Tenali Ramakrishna",
+    "gender":"male",
+    "email":"tenal.rk@gamil.com",
+    "status":"active"
+}
+
+
+GET https://gorest.co.in/public/v2/posts
+Authorization: Bearer 8154de851cf60ecb95bf9d234741b50123426a751a33c18e61e3a2ea5dfc80ec
+
+
+POST https://gorest.co.in/public/v2/users/4358/posts
+Authorization: Bearer 8154de851cf60ecb95bf9d234741b50123426a751a33c18e61e3a2ea5dfc80ec
+Accept: application/json
+Content-Type: application/json
+
+{
+    "user_id":"2529",
+    "title":"Creating a post for first time",
+    "body":"My first post"
+}
